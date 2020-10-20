@@ -1,0 +1,8 @@
+<h1>ALL LATEST ARTICLES</h1>
+
+<ul>
+  <% @articles.each do |article| %>
+    <li><%= link_to article.content, article_path(article) %></li>
+    <li><%= article.title %></li>
+  <% end %>
+</ul>
